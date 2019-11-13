@@ -6,6 +6,7 @@ import Form from './components/Form';
 import './App.css';
 
 function App() {
+  const [memberToEdit, setMemberToEdit] = useState([]);
   const [teamMember, setTeamMember] = useState([
     {
       id: 1,
@@ -49,10 +50,10 @@ function App() {
   return (
     <div className="App">
       <h1>My Team</h1>
-      <Form addNewMember={addNewMember}/>
+      <Form addNewMember={addNewMember} memberToEdit={memberToEdit} />
       <Members teamMember={teamMember} />
     </div>
-  );
+  )
 }
 
 export default App;
