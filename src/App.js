@@ -10,8 +10,29 @@ function App() {
     {
       id: 1,
       name: 'Matthew',
-      email: 'matthew.a.weidner@gmail.com',
-      role: 'Web Developer'
+      email: 'matthew@gmail.com',
+      role: 'Lover of Doggos'
+    },
+    
+    {
+      id: 2,
+      name: 'Spencer',
+      email: 'spencer@gmail.com',
+      role: 'Rider of Motorcycles'
+    },
+
+    {
+      id: 3,
+      name: 'William',
+      email: 'william@gmail.com',
+      role: 'Savant of Startups'
+    },
+
+    {
+      id: 4,
+      name: 'Aaron',
+      email: 'aaron@gmail.com',
+      role: 'Brewer of Coffee'
     }
   ]);
   
