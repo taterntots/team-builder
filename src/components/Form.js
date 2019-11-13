@@ -8,8 +8,14 @@ const Form = props => {
         // console.log(event.target.name);
     }
 
+    const submitForm = event => {
+        event.preventDefault();
+        props.addNewMember(member);
+        setMember({name: '', email: '', role: ''});
+    }
+
     return (
-        <form>
+        <form onSubmit={submitForm}>
             <label htmlFor='name'>Name</label>
             <input
                 id='name'
