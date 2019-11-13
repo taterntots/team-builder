@@ -8,7 +8,7 @@ const Members = props => {
                     <h2>{teammate.name}</h2>
                     <h3>{teammate.email}</h3>
                     <h4>{teammate.role}</h4>
-                    <button type='submit'>Edit</button>
+                    <button onClick={() => (props.setMemberToEdit(teammate), props.setIsEditing(true))}>Edit</button>
                 </div>
             ))}
         </div>
