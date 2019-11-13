@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Members from './components/Members';
+import Form from './components/Form';
 
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1>My Team</h1>
+      <Form />
       <Members teamMemberList={teamMemberList} />
     </div>
   );
